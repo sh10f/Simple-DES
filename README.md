@@ -2,7 +2,7 @@
 
  [En](./README.md)
 
- [Simple-DES.EXE](https://onedrive.live.com/?id=98A24B1640A6D498%21s7735fc4cec774cde916f0e68e8baa19b&cid=98A24B1640A6D498)
+[UI.exe](https://1drv.ms/f/c/98a24b1640a6d498/Ekz8NXd37N5MkW8OaOi6oZsBrXvcY9o9LQoQxxDAVEgVQw)
 
 ---
 
