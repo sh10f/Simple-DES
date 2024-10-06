@@ -6,7 +6,7 @@ from Cipher import S_DES
 test = True
 if test:
 
-    str = "who are you"
+    str = "jk"
     key = np.array([0, 1, 1, 0, 1, 0, 0, 0, 1, 1])
     x = strToBytes(str, False)
     print(bytesToStr(x, False))

@@ -261,13 +261,14 @@ class Ui_MainWindow(object):
         plain_text = self.p1_textEdit.toPlainText()
         key_text = self.k1_textEdit_2.toPlainText()  # 固定加密密钥
 
-        print(plain_text)
+        print("plain: ", plain_text)
 
         x = strToBytes(plain_text, isBinary)
         key = strToBytes(key_text, isBinary)
 
         c = self.machine.forward(x, key, isEncrypt=True)
         cipher_text = bytesToStr(c, isBinary)
+        print("c: ", cipher_text)
         # 将加密后的内容显示在密文文本框中
         self.c1_textEdit_3.setPlainText(cipher_text)
         self.c1_textEdit_3.setEnabled(True)
@@ -285,12 +286,13 @@ class Ui_MainWindow(object):
         # 获取输入的明文
         cipher_text = self.c2_textEdit_4.toPlainText()
         key_text = self.k2_textEdit_5.toPlainText()
-
+        print("c: ", cipher_text)
         c = strToBytes(cipher_text, isBinary)
         key = strToBytes(key_text, isBinary)
 
         p = self.machine.forward(c, key, isEncrypt=False)
         plainText = bytesToStr(p, isBinary)
+        print("plain: ", plainText)
 
         self.p2_textEdit_6.setPlainText(plainText)
         self.p2_textEdit_6.setEnabled(True)
